@@ -1,6 +1,7 @@
 const withPlugins = require('next-compose-plugins');
 const withImages = require('next-images');
 const withCSS = require('@zeit/next-css');
+require("dotenv").config();
 
 function HACK_removeMinimizeOptionFromCssLoaders(config) {
     console.warn(
@@ -20,9 +21,16 @@ function HACK_removeMinimizeOptionFromCssLoaders(config) {
 module.exports = withPlugins([
     [withCSS({
         webpack(config) {
+            config.node = {
+              fs : 'empty'
+            };
             HACK_removeMinimizeOptionFromCssLoaders(config);
             return config;
         },
+        env : {
+            backendhost : process.env.backendhost,
+            backendport : process.env.backendport,
+        }
     })],
     [withImages],
 ]);

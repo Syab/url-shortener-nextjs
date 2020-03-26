@@ -8,12 +8,18 @@ const PageViewsShortyStyles = makeStyles( theme => ({
     margin: {
         marginTop: theme.spacing(2),
     },
-    loginButton: {
+    shortifyButton: {
         margin: theme.spacing(1),
         background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
         color: 'white',
-        width: '100%',
-    }
+        width: '50%',
+    },
+    clearButton: {
+        margin: theme.spacing(1),
+        background: 'linear-gradient(45deg, #50A7C2 30%, #B7F8DB 90%)',
+        color: 'white',
+        width: '50%',
+    },
 
 }));
 
