@@ -25,7 +25,6 @@ const ShortyPage = (props) => {
     const preventDefault = event => event.preventDefault();
     const [ longUrl, setLongUrl ] = useState('');
     const [ shortUrl, setShortUrl ] = useState('');
-    const [ value, setValue ] =useState('');
 
     let addLongUrl = {
         "longUrl" : longUrl
@@ -47,7 +46,6 @@ const ShortyPage = (props) => {
     const handleResetState = () => {
         setLongUrl('');
         setShortUrl('');
-        // setValue('');
     };
 
     return (
@@ -105,7 +103,7 @@ const ShortyPage = (props) => {
                       <CardContent>
                           <Typography>
                           <Link href={shortUrl}>
-                              {shortUrl}
+                              <a>{shortUrl}</a>
                           </Link>
                           </Typography>
                       </CardContent>
