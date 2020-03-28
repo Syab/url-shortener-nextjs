@@ -1,0 +1,44 @@
+{
+  "name": "url-shortener-nextjs",
+  "version": "1.0.0",
+  "description": "ui for url shortener",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syab/url-shortener-nextjs.git"
+  },
+  "keywords": [
+    "nexjs",
+    "reactjs"
+  ],
+  "author": "Syab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syab/url-shortener-nextjs/issues"
+  },
+  "homepage": "https://github.com/Syab/url-shortener-nextjs#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.9.7",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.46",
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.2",
+    "clsx": "^1.1.0",
+    "dotenv": "^8.2.0",
+    "logplease": "^1.2.15",
+    "next": "^9.3.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  }
+}
