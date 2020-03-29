@@ -1,0 +1,6 @@
+{
+  "env": {
+    "backendhost": "@backendhost",
+    "backendport": "@backendport"
+  }
+}
